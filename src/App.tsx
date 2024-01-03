@@ -1,10 +1,14 @@
-import './App.css'
+import { DivApp } from './App'
+import './App.ts'
+import Info from './components/Info'
+import Search from './components/Search'
 
 function App() {
   return (
-    <div>
-      <p>Start</p>
-    </div>
+    <DivApp>
+      <Search />
+      <Info />
+    </DivApp>
   )
 }
 
