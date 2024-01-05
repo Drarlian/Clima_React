@@ -2,19 +2,6 @@ import axios from "axios";
 
 const key = import.meta.env.VITE_API_KEY
 
-type ResultadoClima = {
-    base :string,
-    clouds: {},
-    cod: number,
-    coord: {},
-    dt: number,
-    id: number,
-    main: {},
-    name: {},
-    rain: {},
-
-}
-
 export const useApi = () => ({
     pegarClima: async (cidade: string) => {
         try{
